@@ -116,7 +116,7 @@ Performance may vary depending on image quality, lighting, environmental conditi
 ## Project Screenshots
 
 ### Fire Detection
-![Forest Fire Detection](screenshots/forest_fire_prediction.png)
+![Forest Fire Detection](Screenshots/forest_fire_prediction.png)
 
 ### No-Fire Detection
-![No-Fire Detection](screenshots/forest_no_fire_prediction.png)
+![No-Fire Detection](Screenshots/forest_no_fire_prediction.png)
