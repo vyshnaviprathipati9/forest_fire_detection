@@ -8,6 +8,10 @@ This project, **Forest Fire Detection Using CNN**, aims to detect fire in forest
 
 The goal is to explore how deep learning and computer vision can support forest fire detection and contribute to the development of early warning systems.
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 64a0460 (commit)
 ## Features
 - Fire and no-fire image classification
 - CNN model trained using labelled images
@@ -39,6 +43,7 @@ forest_fire_detection/
 ├── train_model.py
 ├── requirements.txt
 └── README.md
+
 ```
 
 ## Installation
@@ -99,6 +104,7 @@ These figures describe that training run and do not guarantee performance on new
 The model was tested using fire and no-fire images through the Streamlit application and live camera interface. It produced correct predictions for the images tested.
 
 Performance may vary depending on image quality, lighting, environmental conditions, and differences between training images and new images. The displayed confidence score represents the model's prediction score and does not guarantee correctness.
+
 
 ## Future Improvements
 - Test on a larger, separate dataset of unseen images.
