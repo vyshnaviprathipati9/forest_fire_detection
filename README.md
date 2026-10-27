@@ -8,11 +8,8 @@ This project, **Forest Fire Detection Using CNN**, aims to detect fire in forest
 
 The goal is to explore how deep learning and computer vision can support forest fire detection and contribute to the development of early warning systems.
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 64a0460 (commit)
 ## Features
+
 - Fire and no-fire image classification
 - CNN model trained using labelled images
 - Image upload and prediction through Streamlit
@@ -21,6 +18,7 @@ The goal is to explore how deep learning and computer vision can support forest 
 - Saved trained model for reuse
 
 ## Technologies Used
+
 - Python
 - TensorFlow and Keras
 - Convolutional Neural Network (CNN)
@@ -31,19 +29,20 @@ The goal is to explore how deep learning and computer vision can support forest 
 - Matplotlib
 
 ## Project Structure
+
 ```text
 forest_fire_detection/
-├── models/
-│   └── forest_fire_cnn.keras
-├── screenshots/
+├── Screenshots/
 │   ├── forest_fire_prediction.png
 │   └── forest_no_fire_prediction.png
+├── models/
+│   └── forest_fire_cnn.keras
+├── test_images/
 ├── app.py
 ├── live_camera.py
 ├── train_model.py
 ├── requirements.txt
 └── README.md
-
 ```
 
 ## Installation
@@ -90,23 +89,20 @@ python train_model.py
 Ensure the labelled training dataset is available at the path configured in the training script. Training may overwrite the saved model.
 
 ## Model Details
+
 The CNN accepts RGB images resized to 128 × 128 pixels. It uses convolutional and pooling layers to learn image features, followed by dense layers for classification. A sigmoid output produces a score used to classify an image as fire or no fire.
 
 ## Training Results
+
 In one training run, the model achieved:
+
 - Training accuracy: approximately 97.49%
 - Validation accuracy: approximately 94.48%
 
 These figures describe that training run and do not guarantee performance on new images.
 
-## Testing and Limitations
-
-The model was tested using fire and no-fire images through the Streamlit application and live camera interface. It produced correct predictions for the images tested.
-
-Performance may vary depending on image quality, lighting, environmental conditions, and differences between training images and new images. The displayed confidence score represents the model's prediction score and does not guarantee correctness.
-
-
 ## Future Improvements
+
 - Test on a larger, separate dataset of unseen images.
 - Improve the diversity and quality of the training data.
 - Evaluate precision, recall, and the confusion matrix.
@@ -116,7 +112,15 @@ Performance may vary depending on image quality, lighting, environmental conditi
 ## Project Screenshots
 
 ### Fire Detection
+
 ![Forest Fire Detection](Screenshots/forest_fire_prediction.png)
 
 ### No-Fire Detection
+
 ![No-Fire Detection](Screenshots/forest_no_fire_prediction.png)
+
+## Testing and Limitations
+
+The model was tested using fire and no-fire images through the Streamlit application and live camera interface. It produced correct predictions for the images tested.
+
+Performance may vary depending on image quality, lighting, environmental conditions, and differences between training images and new images. The displayed confidence score represents the model's prediction score and does not guarantee correctness.
